@@ -23,10 +23,10 @@ class SearchResultContainer extends Component {
     };
 
     handleInputChange = event => {
-        const input = event.target.input;
+        const name = event.target.name;
         const value = event.target.value;
         this.setState({
-            [input]: value
+            [name]: value
         });
     };
 
@@ -34,6 +34,11 @@ class SearchResultContainer extends Component {
         event.preventDefault();
         this.searchBooks(this.state.search);
     };
+
+    // saveBook = () => {
+    //     // event.preventDefault();
+    //     console.log("something");
+    // }
 
     render() {
         return (
