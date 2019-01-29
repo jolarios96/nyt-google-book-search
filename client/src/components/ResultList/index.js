@@ -16,15 +16,14 @@ function ResultList(props) {
                     <p>Title: {{ result }.result.volumeInfo.title}</p>
                     <p>Authors: {{ result }.result.volumeInfo.authors}</p>
                     <p>{{ result }.result.volumeInfo.description}</p>
-                    {/* < SaveBtn /> */}
-                    <button
+                    < SaveBtn />
+                    {/* <button
                         onClick={() =>
                             console.log("something")
                         }
-                        // onClick={props.testEvent}
                         className="btn btn-primary float-right">
                         Save to List
-                    </button>
+                    </button> */}
                     <a rel="noopener noreferrer"
                         target="_blank"
                         href={{ result }.result.volumeInfo.infoLink}>
