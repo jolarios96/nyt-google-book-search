@@ -1,12 +1,14 @@
 import React from "react";
+import Jumbotron from "../components/Jumbotron";
 
-function Jumbotron() {
+function Search() {
     return (
-        <div class="jumbotron">
+        <Jumbotron>
             <h1>(React) Google Books Search</h1>
+            <br></br>
             <p>Search for and Save Books of Interest</p>
-        </div>
+        </Jumbotron>
     );
 }
 
-export default Jumbotron;
+export default Search;

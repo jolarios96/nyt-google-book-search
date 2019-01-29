@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Nav from "./components/Nav";
-import Jumbotron from "./components/Jumbotron";
 import Form from "./components/Form";
 
+import Search from "./pages/Search";
+import Saved from "./pages/Saved";
 
+import './App.css';
 
 class App extends Component {
   render() {
@@ -14,10 +16,8 @@ class App extends Component {
         <div>
           <Nav />
           <Switch>
-            <Route exact path="/" component={Jumbotron} />
-            {/* <Route exact path="/books" component={Books} />
-            <Route exact path="/books/:id" component={Detail} />
-            <Route component={NoMatch} /> */}
+            <Route exact path="/" component={Search} />
+            <Route exact path="/saved" component={Saved} />
           </Switch>
           <Route exact path="/" component={Form} />
         </div >
