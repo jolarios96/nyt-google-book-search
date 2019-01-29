@@ -11,9 +11,9 @@ class SearchResultContainer extends Component {
         results: []
     };
 
-    // When this component mounts, search the Giphy API for pictures of kittens
+    // When this component mounts, Search for this book
     componentDidMount() {
-        this.searchBooks("Eragon");
+        this.searchBooks("Coding");
     }
 
     searchBooks = query => {
@@ -35,10 +35,10 @@ class SearchResultContainer extends Component {
         this.searchBooks(this.state.search);
     };
 
-    // saveBook = () => {
-    //     // event.preventDefault();
-    //     console.log("something");
-    // }
+    testEvent = () => {
+        // event.preventDefault();
+        console.log("test hit")
+    }
 
     render() {
         return (
